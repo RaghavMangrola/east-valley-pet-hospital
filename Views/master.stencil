@@ -47,7 +47,7 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         {% block body %}{% endblock %}
-        {% include "footer.stencil" %}
+        <p>Copyright &copy; 2016 East Valley Pet Hospital</p>
       </div>
 
     </div> <!-- /container -->
