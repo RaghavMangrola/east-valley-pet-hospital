@@ -1,6 +1,8 @@
-<html>
-<body>
-  <h1>Welcome to East Valley Pet Hospital</h1>
-  {% include "footer.stencil" %}
-</body>
-</html>
+{% extends "master.stencil" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block body %}
+<h1>Welcome to East Valley Pet Hospital</h1>
+{% endblock %}
+

@@ -1,6 +1,6 @@
-<html>
-<body>
-
+{% extends "master.stencil" %}
+{% block title%} {{ name|capitalize }}{% endblock %}
+{% block body %}
 {% if name %}
   <h1>{{ name|capitalize }}</h1>
   <p> {{ bio }} </p>
@@ -17,7 +17,4 @@
   <li>No staff members found</li>
   {% endfor %}
 </ul>
-
-{% include "footer.stencil" %}
-</body>
-</html>
+{% endblock %}

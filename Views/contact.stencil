@@ -1,7 +1,8 @@
-<html>
-<body>
+{% extends "master.stencil" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block body %}
 <h1>Get in touch</h1>
-<p>Call us on 909-794-1888</p>
-{% include "footer.stencil" %}
-</body>
-</html>
+<p>Call us at 909-794-1888</p>
+{% endblock %}
