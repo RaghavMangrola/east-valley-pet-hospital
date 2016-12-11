@@ -1,13 +1,15 @@
 import Kitura
 import LoggerAPI
 import HeliumLogger
+import KituraStencil
 
 HeliumLogger.use()
 let router = Router()
+router.setDefault(templateEngine: StencilTemplateEngine())
 
 router.get("/") { request, response, next in
-  response.send("Welcome to East Valley Pet Hospital")
-  next()
+  defer { next() }
+  try response.render("home", context: [:])
 }
 
 router.get("/staff") { request, response, next in
@@ -16,7 +18,8 @@ router.get("/staff") { request, response, next in
 }
 
 router.get("/contact") { request, response, next in
-  response.send("Get in touch with us")
+  defer { next() }
+  try response.render("contact", context: [:])
   next()
 }
 

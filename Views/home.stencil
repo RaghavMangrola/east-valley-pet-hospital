@@ -1,0 +1,6 @@
+<html>
+<body>
+  <h1>Welcome to East Valley Pet Hospital</h1>
+  {% include "footer.stencil" %}
+</body>
+</html>
